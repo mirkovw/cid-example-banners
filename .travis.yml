@@ -1,8 +1,14 @@
 language: node_js
+root:
+  dist: xenial
+  os: linux
+
 node_js:
   - '12'
+
 install:
   - npm install
+
 script:
   - npm run build
 
