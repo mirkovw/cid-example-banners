@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "useOriginalFileNames": true,
+    "entry": {
+      "js": "./script/main.js",
+      "html": "./index.html"
+    },
+    "size": {
+      "width": 160,
+      "height": 600
+    }
+  },
+  "content": {},
+  "doubleclick": {
+    "creative": "",
+    "agency": "Mediamonks"
+  }
+}

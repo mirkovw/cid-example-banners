@@ -1,0 +1,20 @@
+{
+  "name": "cid_example_banners",
+  "version": "1.0.0",
+  "description": "some example banners to test with ci&cd",
+  "homepage": "",
+  "author": "mirko@mediamonks.com",
+  "engines": {
+    "npm": ">= 8.0.0"
+  },
+  "scripts": {
+    "dev": "node ./node_modules/@mediamonks/richmedia-temple-server/dev.js",
+    "build": "node ./node_modules/@mediamonks/richmedia-temple-server/build.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@mediamonks/henk": "^1.1.1",
+    "@mediamonks/richmedia-temple-server": "^6.0.2",
+    "@mediamonks/temple": "^4.1.0"
+  }
+}
