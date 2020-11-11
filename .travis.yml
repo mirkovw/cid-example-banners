@@ -28,13 +28,13 @@ script:
 
 
 
-#deploy:
-#  provider: s3
-#  access_key_id: $AWS_ACCESS_KEY
-#  secret_access_key: $AWS_SECRET_KEY
-#  bucket: "richmedia-previews-s3bucket-khpmpnjb2dya"
-#  region: eu-west-1
-#  skip_cleanup: true
-#  acl: public_read
-#  local_dir: build
-#  upload-dir: cid_example_banners_upload_dir
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: "richmedia-previews-s3bucket-khpmpnjb2dya"
+  region: eu-west-1
+  skip_cleanup: true
+  acl: public_read
+  local_dir: build
+  upload-dir: cid_example_banners_upload_dir/$TRAVIS_TAG
