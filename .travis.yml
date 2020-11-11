@@ -7,11 +7,15 @@ branches:
   only:
     - master
 
-install:
-  - npm install
+#install:
+#  - npm install
+#
+#script:
+# - npm run build
 
-# script:
-#  - npm run build
+before_install:
+  - echo -e "$AWS_ACCESS_KEY"
+  - echo "$AWS_SECRET_KEY"
 
 deploy:
   provider: s3
