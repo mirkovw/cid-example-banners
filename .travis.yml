@@ -7,18 +7,20 @@ branches:
   only:
     - master
 
-#install:
-#  - npm install
-#
-#script:
-# - npm run build
-
 before_install:
   - echo -e "$AWS_ACCESS_KEY"
   - echo "$AWS_SECRET_KEY"
   - echo $TRAVIS_TAG
   - echo "$TRAVIS_SECURE_ENV_VARS"
   - echo "tag"
+
+#install:
+#  - npm install
+#
+#script:
+# - npm run build
+
+
 
 #deploy:
 #  provider: s3
