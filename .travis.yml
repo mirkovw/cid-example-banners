@@ -38,3 +38,6 @@ deploy:
   upload-dir: $TRAVIS_REPO_SLUG/$TRAVIS_TAG
   on:
     tags: true
+
+after_deploy:
+  - echo http://richmedia-previews-s3bucket-khpmpnjb2dya.s3.amazonaws.com/$TRAVIS_REPO_SLUG/$TRAVIS_TAG/index.html

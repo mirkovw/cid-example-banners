@@ -10,8 +10,7 @@
   "scripts": {
     "dev": "node ./node_modules/@mediamonks/richmedia-temple-server/dev.js",
     "build": "node ./node_modules/@mediamonks/richmedia-temple-server/build.js",
-    "deploy": "git add . && git commit -am \"automatron\" && npm version patch",
-    "push": "git push origin --tags"
+    "deploy": "git add . && git commit -am \"automatron\" && npm version patch"
   },
   "license": "ISC",
   "dependencies": {
