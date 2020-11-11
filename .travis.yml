@@ -10,8 +10,8 @@ branches:
 install:
   - npm install
 
-script:
-  - npm run build
+# script:
+#  - npm run build
 
 deploy:
   provider: s3
