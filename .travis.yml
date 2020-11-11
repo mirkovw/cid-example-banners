@@ -16,9 +16,9 @@ branches:
 before_install:
   - echo -e "$AWS_ACCESS_KEY"
   - echo "$AWS_SECRET_KEY"
-  - echo "$TRAVIS_TAG"
+  - echo $TRAVIS_TAG
   - echo "$TRAVIS_SECURE_ENV_VARS"
-  - echo tag
+  - echo "tag"
 
 #deploy:
 #  provider: s3
