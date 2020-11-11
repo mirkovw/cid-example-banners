@@ -35,6 +35,6 @@ deploy:
   skip_cleanup: true
   acl: public_read
   local_dir: build
-  upload-dir: cid_example_banners_upload_dir
+  upload-dir: cid_example_banners_upload_dir/$TRAVIS_TAG
   on:
     tags: true
