@@ -9,16 +9,12 @@ node_js:
 
 before_install:
   - echo ${TRAVIS_REPO_SLUG}
-  - echo -e "$AWS_ACCESS_KEY"
-  - echo "$AWS_SECRET_KEY"
   - echo $TRAVIS_TAG
-  - echo "$TRAVIS_SECURE_ENV_VARS"
-  - echo "tag"
   - npm version
 
-script:
-  - echo "running get_version.sh"
-  - bash get_version.sh
+#script:
+#  - echo "running get_version.sh"
+#  - bash get_version.sh
 
 #install:
 #  - npm install
