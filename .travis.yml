@@ -15,7 +15,7 @@ before_install:
   - echo $PACKAGE_VERSION
   - MY_VERSION=$(bash get_version.sh)
   - echo $MY_VERSION
-  - echo $(cat package.json | grep version | head -1)
+  - echo $(cat package.json | grep version | head -1 | awk -F: '{ print $2 }')
 
 #install:
 #  - npm install
