@@ -29,18 +29,18 @@ before_install:
 #  - echo "running build:all"
 #  - npm run build:all
 
-deploy:
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  bucket: "richmedia-previews-s3bucket-khpmpnjb2dya"
-  region: eu-west-1
-  skip_cleanup: true
-  acl: public_read
-  local_dir: build
-  upload-dir: $TRAVIS_REPO_SLUG/$TRAVIS_TAG
-  on:
-    tags: true
-
-after_deploy:
-  - echo http://richmedia-previews-s3bucket-khpmpnjb2dya.s3.amazonaws.com/$TRAVIS_REPO_SLUG/$TRAVIS_TAG/index.html
+#deploy:
+#  provider: s3
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key: $AWS_SECRET_KEY
+#  bucket: "richmedia-previews-s3bucket-khpmpnjb2dya"
+#  region: eu-west-1
+#  skip_cleanup: true
+#  acl: public_read
+#  local_dir: build
+#  upload-dir: $TRAVIS_REPO_SLUG/$TRAVIS_TAG
+#  on:
+#    tags: true
+#
+#after_deploy:
+#  - echo http://richmedia-previews-s3bucket-khpmpnjb2dya.s3.amazonaws.com/$TRAVIS_REPO_SLUG/$TRAVIS_TAG/index.html
