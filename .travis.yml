@@ -27,7 +27,6 @@ before_install:
 
 #install:
 #  - npm install
-#
 
 #script:
 #  - echo "running get_version.sh"
@@ -49,4 +48,4 @@ deploy:
   upload-dir: $TRAVIS_REPO_SLUG/$PACKAGE_VERSION
 
 after_deploy:
-  - echo http://richmedia-previews-s3bucket-khpmpnjb2dya.s3.amazonaws.com/$TRAVIS_REPO_SLUG/$TRAVIS_TAG/index.html
+  - echo http://richmedia-previews-s3bucket-khpmpnjb2dya.s3.amazonaws.com/$TRAVIS_REPO_SLUG/$PACKAGE_VERSION/index.html
