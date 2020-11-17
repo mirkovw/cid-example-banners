@@ -13,15 +13,16 @@ before_install:
   - npm version
 
 script:
-  - echo "running get_version.sh"
-  - bash get_version.sh
-  - echo "so this should work now"
-  - echo $PACKAGE_VERSION
+
 
 #install:
 #  - npm install
 #
 script:
+  - echo "running get_version.sh"
+  - bash get_version.sh
+  - echo "so this should work now"
+  - echo $PACKAGE_VERSION
   - echo "running build:all"
   - npm run build:all
 
