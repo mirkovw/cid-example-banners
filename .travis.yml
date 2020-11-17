@@ -12,9 +12,11 @@ before_install:
   - echo $TRAVIS_TAG
   - npm version
 
-#script:
-#  - echo "running get_version.sh"
-#  - bash get_version.sh
+script:
+  - echo "running get_version.sh"
+  - bash get_version.sh
+  - echo "so this should work now"
+  - echo $PACKAGE_VERSION
 
 #install:
 #  - npm install
