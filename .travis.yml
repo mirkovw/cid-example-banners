@@ -19,8 +19,9 @@ before_install:
 #install:
 #  - npm install
 #
-#script:
-# - npm run build
+script:
+  - echo "running build:all"
+  - npm run build:all
 
 deploy:
   provider: s3
