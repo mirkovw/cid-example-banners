@@ -13,7 +13,7 @@ before_install:
   - npm version
   - PACKAGE_VERSION=1.2.6
   - echo $PACKAGE_VERSION
-  - MY_VERSION=bash get_version.sh
+  - MY_VERSION=$(bash get_version.sh)
   - echo $MY_VERSION
   - echo $(cat package.json | grep version | head -1)
 
