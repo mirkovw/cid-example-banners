@@ -11,14 +11,15 @@ before_install:
   - echo ${TRAVIS_REPO_SLUG}
   - echo $TRAVIS_TAG
   - npm version
+  - PACKAGE_VERSION=1.2.6
+  - echo $PACKAGE_VERSION
+  - MY_VERSION=bash get_version.sh
+  - echo $MY_VERSION
+  - echo $(cat package.json | grep version | head -1)
 
 #install:
 #  - npm install
 #
-
-script:
-  - PACKAGE_VERSION=1.2.6
-  - echo $PACKAGE_VERSION
 
 #script:
 #  - echo "running get_version.sh"
