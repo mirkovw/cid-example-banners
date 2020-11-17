@@ -12,19 +12,21 @@ before_install:
   - echo $TRAVIS_TAG
   - npm version
 
-script:
-
-
 #install:
 #  - npm install
 #
+
 script:
-  - echo "running get_version.sh"
-  - bash get_version.sh
-  - echo "so this should work now"
+  - PACKAGE_VERSION=1.2.6
   - echo $PACKAGE_VERSION
-  - echo "running build:all"
-  - npm run build:all
+
+#script:
+#  - echo "running get_version.sh"
+#  - bash get_version.sh
+#  - echo "so this should work now"
+#  - echo $PACKAGE_VERSION
+#  - echo "running build:all"
+#  - npm run build:all
 
 deploy:
   provider: s3
