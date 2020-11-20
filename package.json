@@ -10,8 +10,9 @@
   "scripts": {
     "dev": "node ./node_modules/@mediamonks/richmedia-temple-server/dev.js",
     "build": "node ./node_modules/@mediamonks/richmedia-temple-server/build.js",
-    "deploy": "git add . && git commit -am \"automatron\" && npm version patch",
-    "build:all": "rds-build --glob ./**/.richmediarc* --choices eyJlbXB0eUJ1aWxkRGlyIjp0cnVlLCJidWlsZCI6WyJhbGwiXX0="
+    "build:all": "rds-build --glob ./**/.richmediarc* --choices eyJlbXB0eUJ1aWxkRGlyIjp0cnVlLCJidWlsZCI6WyJhbGwiXX0=",
+    "build:one": "rds-build --glob ./**/.richmediarc* --choices eyJlbXB0eUJ1aWxkRGlyIjp0cnVlLCJidWlsZCI6WyIuL3NyYy8zMDB4MjUwLy5yaWNobWVkaWFyYyJdfQ==",
+    "build:two": "rds-build --glob ./**/.richmediarc* --choices eyJlbXB0eUJ1aWxkRGlyIjp0cnVlLCJidWlsZCI6WyIuL3NyYy8xNjB4NjAwLy5yaWNobWVkaWFyYyIsIi4vc3JjLzMwMHgyNTAvLnJpY2htZWRpYXJjIl19"
   },
   "license": "ISC",
   "dependencies": {
