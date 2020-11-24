@@ -11,9 +11,9 @@ before_install:
   - sudo apt-get install jq
   - PACKAGE_NAME=$(cat package.json | jq -r '.name')
   - PACKAGE_VERSION=$(cat package.json | jq -r '.version')
-  - echo $TRAVIS_REPO_SLUG
-  - echo $PACKAGE_NAME
-  - echo $PACKAGE_VERSION
+#  - echo $TRAVIS_REPO_SLUG
+#  - echo $PACKAGE_NAME
+#  - echo $PACKAGE_VERSION
 
 #install:
 #  - npm install
